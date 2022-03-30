@@ -19,6 +19,10 @@ Intro to VueJS (Directives)
   </span>
 </div>
 
+<div class="mt-24">
+  <p class="text-sm">*Gunakan Dark Mode di kiri bawah yah untuk hasil maksimal</p>
+</div>
+
 <div class="abs-br m-6 flex gap-2">
   <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
     <carbon:edit />
@@ -152,7 +156,7 @@ a {
 
 ---
 
-# Vue vs JQuery (III)
+# Vue vs jQuery (III)
 
 ## Aplikasi Todo List
 
