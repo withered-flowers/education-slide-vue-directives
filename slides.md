@@ -148,7 +148,7 @@ a {
 # Vue vs jQuery (II)
 
 <div class="min-w-full h-96 flex flex-col justify-center items-center">
-  <p class="text-green-400">- Mari kita liat perbandingannya -</p>
+  <p>Mari kita liat perbandingannya</p>
   <p>(dengan membuat aplikasi ToDo List Sederhana)</p>
 </div>
 
@@ -353,11 +353,52 @@ ul li {
 
 ---
 
-# VueJS Dev Tools
+# Options: data
+
+Fungsi yang mengembalikan kondisi (state) reaktif awal dari suatu instance component
+
+TL;DR
+
+Deklarasi data yang reaktif di dalam VueJS
 
 <style>
 h1 {
   @apply text-green-400
+}
+</style>
+
+---
+
+# Options: methods
+
+Deklarasi method untuk digabungkan ke dalam instance component
+
+TL;DR
+
+Cara deklarasi method (function) di dalam VueJS
+
+
+<style>
+h1 {
+  @apply text-green-400
+}
+</style>
+
+---
+
+# VueJS Dev Tools
+Tools yang digunakan untuk meningkatkan Devloper eXperience (DX)
+
+- Volar Extension (VSCode)
+- VueJS DevTools (Browser: Gecko / Chromium Based)
+
+<style>
+h1 {
+  @apply text-green-400
+}
+
+ul li {
+  @apply ml-5 list-disc
 }
 </style>
 
