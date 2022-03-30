@@ -295,7 +295,20 @@ Vue.createApp({
 layout: center
 ---
 
-# End of Slide
+# End of Slides ?
+
+<style>
+  h1 {
+    @apply text-green-400
+  }
+</style>
+
+---
+layout: center
+---
+
+# Fun Fact:
+## Slide ini dibuat sepenuhnya menggunakan VueJS 😊
 
 <style>
   h1 {
