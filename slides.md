@@ -100,6 +100,10 @@ li:last-child {
 a {
   @apply text-green-400 hover:text-green-700 hover:underline
 }
+
+ul li {
+  @apply ml-5 list-disc
+}
 </style>
 
 ---
@@ -165,9 +169,9 @@ a {
 </div>
 
 <style>
-  h1 {
-    @apply text-green-400
-  }
+h1 {
+  @apply text-green-400
+}
 </style>
 
 ---
@@ -228,13 +232,13 @@ HTML
 ```
 
 <style>
-  h1 {
-    @apply text-green-400
-  }
+h1 {
+  @apply text-green-400
+}
 
-  pre {
-    @apply pr-4
-  }
+pre {
+  @apply pr-4
+}
 </style>
 
 ---
@@ -286,13 +290,75 @@ Vue.createApp({
 ```
 
 <style>
-  h1 {
-    @apply text-green-400
-  }
+h1 {
+  @apply text-green-400
+}
 
-  pre {
-    @apply pr-4
-  }
+pre {
+  @apply pr-4
+}
+</style>
+
+---
+
+# VueJS Directives
+
+Token spesial (markup) atau spesial `attribute` yang meminta si VueJS untuk melakukan sesuatu / terhadap elemen DOM.
+
+- `v-text`
+- `v-if` & `v-show`
+- `v-for`
+- `v-model`
+- `v-bind`
+- `v-on`
+
+
+<style>
+h1 {
+  @apply text-green-400
+}
+
+ul li {
+  @apply ml-5 list-disc
+}
+</style>
+
+---
+
+# VueJS Options API
+
+Sebuah API dari VueJS yang bersifat Options (Object) yang merupakan fungsi internal dalam VueJS
+
+Yang akan dipelajari di sini adalah mengenai <span>State / Kondisi</span> internal aplikasi VueJS itu sendiri
+
+<div class="my-18" />
+
+Terbagi menjadi:
+- data
+- methods
+
+<style>
+h1 {
+  @apply text-green-400
+}
+
+span {
+  @apply text-green-400 font-semibold
+}
+
+ul li {
+  @apply ml-5 list-disc
+}
+</style>
+
+---
+
+# VueJS Dev Tools
+
+<style>
+h1 {
+  @apply text-green-400
+}
 </style>
 
 ---
@@ -302,20 +368,23 @@ layout: center
 # End of Slides ?
 
 <style>
-  h1 {
-    @apply text-green-400
-  }
+h1 {
+  @apply text-green-400
+}
 </style>
 
 ---
 layout: center
+class: text-center
 ---
 
 # Fun Fact:
 ## Slide ini dibuat sepenuhnya menggunakan VueJS 😊
 
+##### Buka https://sli.dev untuk mengetahui tools pembuat slide ini lebih lanjut
+
 <style>
-  h1 {
-    @apply text-green-400
-  }
+h1 {
+  @apply text-green-400
+}
 </style>
