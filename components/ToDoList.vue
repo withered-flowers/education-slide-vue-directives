@@ -17,7 +17,7 @@ export default {
 
 <template>
   <div id="app">
-    <h2>Todo (Vue)</h2>
+    <h2>Todo</h2>
     <form method="post" v-on:submit.prevent="submitForm">
       <input
         type="text"

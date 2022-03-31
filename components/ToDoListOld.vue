@@ -21,7 +21,7 @@ $(function () {
 
 <template>
   <div id="app">
-    <h2>Todo (jQuery)</h2>
+    <h2>Todo</h2>
     <form method="post" id="formTodo">
       <input
         type="text"
