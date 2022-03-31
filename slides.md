@@ -6,6 +6,11 @@ highlighter: shiki
 lineNumbers: true
 drawings:
   persist: false
+fonts:
+  weights: '200,400,600'
+  sans: 'Robot'
+  serif: 'Robot Slab'
+  mono: 'Fira Code'
 title: VueJS Introduction
 ---
 
@@ -300,6 +305,20 @@ pre {
 </style>
 
 ---
+layout: two-cols
+---
+
+# Apps Todo List (jQuery)
+
+<ToDoListOld />
+
+::right::
+
+# Apps ToDo List (VueJS)
+
+<ToDoList />
+
+---
 
 # VueJS Directives
 
@@ -361,6 +380,18 @@ TL;DR
 
 Deklarasi data yang reaktif di dalam VueJS
 
+```js
+Vue.createApp({
+  data() {
+    // karena banyak kita declare untuk return object
+    return {
+      // masukkan "nama variabel" di sini
+      sudahNgertiBelum: false
+    };
+  },
+}).mount("#app")
+```
+
 <style>
 h1 {
   @apply text-green-400
@@ -377,6 +408,19 @@ TL;DR
 
 Cara deklarasi method (function) di dalam VueJS
 
+```js
+Vue.createApp({
+  // dekalarasi fungsi di sini
+  methods: {
+    // nama fungsi di sini
+    // TIDAK menggunakan arrow function
+    yukBelajarVueJS() {
+      // tapi kalau nanti di dalam sini mau pakai arrow, tidak apa apa
+      console.log("Yuk liatin dengan serius !");
+    }
+  },
+}).mount("#app")
+```
 
 <style>
 h1 {
