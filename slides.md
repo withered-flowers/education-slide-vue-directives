@@ -386,7 +386,7 @@ Cara deklarasi method (function) di dalam VueJS
 
 ```js
 Vue.createApp({
-  // dekalarasi fungsi di sini
+  // deklarasi fungsi di sini
   methods: {
     // nama fungsi di sini
     // TIDAK menggunakan arrow function

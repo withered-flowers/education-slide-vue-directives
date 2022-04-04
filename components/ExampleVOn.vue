@@ -8,7 +8,7 @@ export default {
   methods: {
     clickMe() {
       this.customValue === "Masih kosong nih"
-        ? (this.customValue = "Makin ngerti VueJS")
+        ? (this.customValue = "Makin ngerti VueJS coy")
         : (this.customValue = "Masih kosong nih");
     },
   },
