@@ -448,7 +448,7 @@ layout: two-cols
 
 # Contoh v-text
 
-```js
+```js{0|10-18|2-7|all}
 <!-- Bagian HTML -->
 <div id="app">
   <div>
@@ -499,6 +499,50 @@ h1 {
 </style>
 
 ---
+layout: two-cols
+---
+
+# Contoh v-bind
+
+```js{0|11-20|2-8|all}
+<!-- Bagian HTML -->
+<div id="app">
+  <div>
+    <img v-bind:src="customImageUrl1" alt="A Placeholder" />
+    <div style="padding-top: 0.25rem; padding-bottom: 0.25rem">&nbsp;</div>
+    <img :src="customImageUrl2" alt="A Kitten" />
+  </div>
+</div>
+
+// Bagian JavaScript
+<script>
+Vue.createApp({
+  data() {
+    return {
+      customImageUrl1: "https://via.placeholder.com/128",
+      customImageUrl2: "https://placekitten.com/128",
+    };
+  },
+}).mount("#app");
+</script>
+```
+
+::right::
+# &nbsp;
+
+<ExampleVBind />
+
+<style>
+h1 {
+  @apply text-green-400
+}
+
+pre {
+  @apply pr-4
+}
+</style>
+
+---
 layout: statement
 ---
 
@@ -513,6 +557,53 @@ h1 {
 </style>
 
 ---
+layout: two-cols
+---
+
+# Contoh v-model
+
+```js{0|15-23|2-12|all}
+<!-- Bagian HTML -->
+<div id="app">
+  <div>
+    <input
+      type="text"
+      v-model="customDataText"
+      placeholder="Masukkan input"
+      class="p-2 rounded-xl text-gray-700"
+    />
+    <p>Tulisan dari input ini adalah: {{ customDataText }}</p>
+  </div>
+</div>
+
+// Bagian JavaScript
+<script>
+Vue.createApp({
+  data() {
+    return {
+      customDataText: "",
+    };
+  },
+}).mount("#app");
+</script>
+```
+
+::right::
+# &nbsp;
+
+<ExampleVModel />
+
+<style>
+h1 {
+  @apply text-green-400
+}
+
+pre {
+  @apply pr-4
+}
+</style>
+
+---
 layout: statement
 ---
 
@@ -523,6 +614,52 @@ Directives untuk melakukan looping terhadap data dengan HTML element
 <style>
 h1 {
   @apply text-green-400
+}
+</style>
+
+---
+layout: two-cols
+---
+
+# Contoh v-for
+
+```js{0|14-21|2-11|all}
+<!-- Bagian HTML -->
+<div id="app">
+  <div>
+    <p>Apa yang sudah dipelajari?</p>
+    <ul>
+      <li v-for="data in customLooper">
+        {{ data }}
+      </li>
+    </ul>
+  </div>
+</div>
+
+// Bagian Javascript
+<script>
+Vue.createApp({
+  data() {
+    return {
+      customLooper: ["Options API", "Directives", "v-xxx"],
+    };
+  },
+}).mount("#app");
+</script>
+```
+
+::right::
+# &nbsp;
+
+<ExampleVFor />
+
+<style>
+h1 {
+  @apply text-green-400
+}
+
+pre {
+  @apply pr-4
 }
 </style>
 
