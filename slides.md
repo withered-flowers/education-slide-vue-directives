@@ -678,6 +678,53 @@ h1 {
 </style>
 
 ---
+layout: two-cols
+---
+
+# Contoh v-on
+
+```js{0|8-23|1-6|all}
+<div id="app">
+  <div>
+    <p>{{ customValue }}</p>
+    <button v-on:click="clickMe">Tekan Aku</button>
+  </div>
+</div>
+
+<script>
+Vue.createApp({
+  data() {
+    return {
+      customValue: "Masih Kosong nih",
+    };
+  },
+  methods: {
+    clickMe() {
+      this.customValue === "Masih kosong nih"
+        ? (this.customValue = "Makin ngerti VueJS coy")
+        : (this.customValue = "Masih kosong nih");
+    },
+  },
+}).mount("#app");
+</script>
+```
+
+::right::
+# &nbsp;
+
+<ExampleVOn />
+
+<style>
+h1 {
+  @apply text-green-400
+}
+
+pre {
+  @apply pr-4
+}
+</style>
+
+---
 layout: statement
 ---
 
@@ -692,9 +739,55 @@ h1 {
 </style>
 
 ---
+layout: two-cols
+---
+
+# Contoh v-if & v-show
+
+```js{0|14-22|1-12|all}
+<div id="app">
+  <div>
+    <div>
+      <input type="checkbox" v-model="isTouched" id="checkOne" class="mr-2" />
+      <label for="checkOne">Is Touched?</label>
+    </div>
+    <p v-if="isTouched">Sebuah Tulisan dengan v-if</p>
+    <p v-show="!isTouched">
+      Sebuah Tulisan dengan kondisi terbalik dengan v-show
+    </p>
+  </div>
+</div>
+
+<script>
+Vue.createApp({
+  data() {
+    return {
+      isTouched: true,
+    };
+  },
+}).mount("#app");
+</script>
+```
+
+::right::
+# &nbsp;
+
+<ExampleVIfVShow />
+
+<style>
+h1 {
+  @apply text-green-400
+}
+
+pre {
+  @apply pr-4
+}
+</style>
+
+---
 
 # VueJS Dev Tools
-Tools yang digunakan untuk meningkatkan Devloper eXperience (DX)
+Tools yang digunakan untuk meningkatkan Developer eXperience (DX)
 
 - Volar Extension (VSCode)
 - VueJS DevTools (Browser: Gecko / Chromium Based)
