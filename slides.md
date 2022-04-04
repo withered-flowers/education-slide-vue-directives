@@ -320,30 +320,6 @@ layout: two-cols
 
 ---
 
-# VueJS Directives
-
-Token spesial (markup) atau spesial `attribute` yang meminta si VueJS untuk melakukan sesuatu / terhadap elemen DOM.
-
-- `v-text`
-- `v-if` & `v-show`
-- `v-for`
-- `v-model`
-- `v-bind`
-- `v-on`
-
-
-<style>
-h1 {
-  @apply text-green-400
-}
-
-ul li {
-  @apply ml-5 list-disc
-}
-</style>
-
----
-
 # VueJS Options API
 
 Sebuah API dari VueJS yang bersifat Options (Object) yang merupakan fungsi internal dalam VueJS
@@ -430,6 +406,156 @@ h1 {
 
 ---
 
+# VueJS Directives
+
+Token spesial (markup) atau spesial `attribute` yang meminta si VueJS untuk melakukan sesuatu / terhadap elemen DOM.
+
+- `v-text`
+- `v-bind`
+- `v-model`
+- `v-for`
+- `v-on`
+- `v-if` & `v-show`
+
+
+<style>
+h1 {
+  @apply text-green-400
+}
+
+ul li {
+  @apply ml-5 list-disc
+}
+</style>
+
+---
+layout: statement
+---
+
+# v-text
+
+Directives untuk menampilkan suatu tulisan dari data yang ada
+
+<style>
+h1 {
+  @apply text-green-400
+}
+</style>
+
+---
+layout: two-cols
+---
+
+# Contoh v-text
+
+```js
+<!-- Bagian HTML -->
+<div id="app">
+  <div>
+    <p v-text="`Dengan v-text: ` + exampleData"></p>
+    <p>Dengan shorthand: {{ exampleData }}</p>
+  </div>
+</div>
+
+// Bagian JavaScript
+<script>
+Vue.createApp({
+  data() {
+    return {
+      exampleData: "Halo VueJS",
+    };
+  },
+}).mount("#app");
+</script>
+```
+
+::right::
+# &nbsp;
+
+<ExampleVText />
+
+<style>
+h1 {
+  @apply text-green-400
+}
+
+pre {
+  @apply pr-4
+}
+</style>
+
+---
+layout: statement
+---
+
+# v-bind
+
+Directives untuk mengikat data dengan attributes yang ada di HTML, bisa juga digunakan untuk mengikat custom attributes.
+
+<style>
+h1 {
+  @apply text-green-400
+}
+</style>
+
+---
+layout: statement
+---
+
+# v-model
+
+Directives untuk membuat ikatan data dua arah terhadap HTML element input form, textarea, dan select.
+
+<style>
+h1 {
+  @apply text-green-400
+}
+</style>
+
+---
+layout: statement
+---
+
+# v-for
+
+Directives untuk melakukan looping terhadap data dengan HTML element
+
+<style>
+h1 {
+  @apply text-green-400
+}
+</style>
+
+---
+layout: statement
+---
+
+# v-on
+
+Directives untuk mengikat event dengan method yang ada di VueJS. Bisa juga digunakan untuk custom event
+
+<style>
+h1 {
+  @apply text-green-400
+}
+</style>
+
+---
+layout: statement
+---
+
+# v-if & v-show
+
+Directives conditional untuk mengecek kondisi. apabila truthy, maka component di-render, apabila falsy, component akan "dihilangkan" (`v-if`) atau "disembunyikan" (`v-show`)
+
+<style>
+h1 {
+  @apply text-green-400
+}
+</style>
+
+---
+
 # VueJS Dev Tools
 Tools yang digunakan untuk meningkatkan Devloper eXperience (DX)
 
@@ -464,12 +590,22 @@ class: text-center
 ---
 
 # Fun Fact:
-## Slide ini dibuat sepenuhnya menggunakan VueJS 😊
 
-##### Buka https://sli.dev untuk mengetahui tools pembuat slide ini lebih lanjut
+<div>
+
+<v-clicks>
+  <h2>Slide ini dibuat menggunakan <span>VueJS</span> 😊</h2>
+  <h5>Buka <a href="https://sli.dev">https://sli.dev</a> untuk mengetahui tools pembuat slide ini lebih lanjut</h5>
+</v-clicks>
+
+</div>
 
 <style>
-h1 {
+h1, span {
   @apply text-green-400
+}
+
+a {
+  @apply text-green-400 hover:text-green-700 hover:underline
 }
 </style>
