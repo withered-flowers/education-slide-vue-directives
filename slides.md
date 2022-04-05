@@ -453,7 +453,7 @@ layout: two-cols
 <div id="app">
   <div>
     <p v-text="`Dengan v-text: ` + exampleData"></p>
-    <p>Dengan shorthand: {{ exampleData }}</p>
+    <p>Dengan interpolation: {{ exampleData }}</p>
   </div>
 </div>
 
@@ -623,7 +623,7 @@ layout: two-cols
 
 # Contoh v-for
 
-```js{0|14-21|2-11|all}
+```js{0|14-22|2-11|all}
 <!-- Bagian HTML -->
 <div id="app">
   <div>
