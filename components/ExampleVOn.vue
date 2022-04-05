@@ -2,7 +2,7 @@
 export default {
   data() {
     return {
-      customValue: "Masih Kosong nih",
+      customValue: "Masih kosong nih",
     };
   },
   methods: {

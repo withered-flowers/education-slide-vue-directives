@@ -695,7 +695,7 @@ layout: two-cols
 Vue.createApp({
   data() {
     return {
-      customValue: "Masih Kosong nih",
+      customValue: "Masih kosong nih",
     };
   },
   methods: {
@@ -753,7 +753,7 @@ layout: two-cols
     </div>
     <p v-if="isTouched">Sebuah Tulisan dengan v-if</p>
     <p v-show="!isTouched">
-      Sebuah Tulisan dengan kondisi terbalik dengan v-show
+      A text with v-show
     </p>
   </div>
 </div>
